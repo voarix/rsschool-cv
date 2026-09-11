@@ -399,18 +399,18 @@
       <div class="code__content">
         <pre class="code__block">
           <code>
-const highAndLow = (numStr) => {
+const highAndLow = (numStr) =&gt; {
   const array = numStr.split(" ");
 
   let highestNumber = +array[0];
   let lowestNumber = +array[0];
 
-  for (let i = 1; i < array.length; i++) {
+  for (let i = 1; i &lt; array.length; i++) {
     let num = +array[i];
 
-    if (num > highestNumber) {
+    if (num &gt; highestNumber) {
      highestNumber = num;
-    } else if (num < lowestNumber) {
+    } else if (num &lt; lowestNumber) {
       lowestNumber = num;
     }
   }
@@ -583,7 +583,7 @@ highAndLow(numbersStr);
 
     <a
       class="footer__school"
-      href="https://rs.school"
+      href="https://rs.school/courses/short-track"
       target="_blank"
     >
       <img
