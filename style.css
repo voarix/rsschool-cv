@@ -37,6 +37,7 @@ body {
   justify-content: end;
   gap: 20px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .nav__link {
@@ -84,6 +85,7 @@ body {
   display: flex;
   gap: 6px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .header__social-link {
@@ -362,4 +364,106 @@ body {
 
 .footer__school-logo {
   width: 90px;
+}
+
+
+@media (max-width: 700px) {
+  .header {
+    padding: 20px 0 30px;
+  }
+
+  .nav {
+    margin-bottom: 25px;
+  }
+
+  .nav__list {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .header__content {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .header__info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__title {
+    font-size: 28px;
+  }
+
+  .header__subtitle {
+    font-size: 16px;
+  }
+
+  .header__location,
+  .header__social {
+    justify-content: center;
+  }
+
+  .header__social-link {
+    padding: 6px 10px;
+  }
+
+  .header__img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .cv-section {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 40px 0;
+  }
+
+  .cv-section__title {
+    font-size: 21px;
+  }
+
+  .skills__content {
+    gap: 25px;
+  }
+
+  .skills__item {
+    padding: 6px 10px;
+  }
+
+  .nav__link,
+  .header__social-link,
+  .skills__item {
+    font-size: 13px;
+  }
+
+  .code__block {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .header__img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cv-section {
+    padding: 32px 0;
+  }
+
+  .project__card {
+    padding: 15px;
+  }
+
+  .code__block {
+    padding: 8px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
 }

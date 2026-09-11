@@ -131,13 +131,11 @@
         </ul>
       </div>
 
-      <div class="header__photo">
-        <img
-          class="header__img"
-          src="./assets/avatar.png"
-          alt="Alikhan Kachkynov's initials avatar"
-        >
-      </div>
+      <img
+        class="header__img"
+        src="./assets/avatar.png"
+        alt="Alikhan Kachkynov's initials avatar"
+      >
     </div>
   </div>
 </header>
@@ -397,8 +395,9 @@
       <h2 class="cv-section__title">Code</h2>
 
       <div class="code__content">
-        <pre class="code__block">
-          <code>
+        <pre class="code__block"><code>
+const numberStr = "1 4 10";
+
 const highAndLow = (numStr) =&gt; {
   const array = numStr.split(" ");
 
@@ -418,9 +417,7 @@ const highAndLow = (numStr) =&gt; {
   return `${highestNumber} ${lowestNumber}`;
 };
 
-highAndLow(numbersStr);
-          </code>
-        </pre>
+highAndLow(numbersStr);</code></pre>
       </div>
     </section>
 
