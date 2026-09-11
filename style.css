@@ -111,16 +111,19 @@ body {
 .header__social-link-gmail {
   border: 2px solid #EA4335;
   color: #EA4335;
+  background-color: rgba(234, 67, 53, 0.08);
 }
 
 .header__social-link-telegram {
   border: 2px solid #26A5E4;
   color: #26A5E4;
+  background-color: rgba(38, 165, 228, 0.08);
 }
 
 .header__social-link-github {
   border: 2px solid #181717;
   color: #181717;
+  background-color: rgba(24, 23, 23, 0.06);
 }
 
 .header__social-icon {
