@@ -264,6 +264,10 @@ body {
   text-decoration: underline;
 }
 
+.education {
+  border-bottom: none;
+}
+
 .education__content {
   display: grid;
   gap: 32px;
@@ -309,4 +313,53 @@ body {
 
 .languages__item span:last-child {
   color: var(--color-secondary);
+}
+
+.footer {
+  padding: 24px 0;
+  background-color: #f8fafc;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer__github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease,
+  transform 0.3s ease;
+}
+
+.footer__github:hover {
+  color: #7c3aed;
+  transform: translateY(-2px);
+}
+
+.footer__github-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.footer__year {
+  color: var(--color-secondary);
+}
+
+.footer__school {
+  transition: transform 0.3s ease;
+}
+
+.footer__school:hover {
+  transform: translateY(-2px);
+}
+
+.footer__school-logo {
+  width: 90px;
 }
