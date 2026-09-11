@@ -263,3 +263,50 @@ body {
 .project__link:hover {
   text-decoration: underline;
 }
+
+.education__content {
+  display: grid;
+  gap: 32px;
+}
+
+.education__places {
+  display: grid;
+  gap: 10px;
+}
+
+.education__heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.education__school,
+.languages__title {
+  color: var(--color-primary);
+}
+
+.education__time {
+  color: var(--color-secondary);
+}
+
+.languages__list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+  list-style: none;
+}
+
+.languages__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 10px;
+  color: var(--color-primary);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.languages__item span:last-child {
+  color: var(--color-secondary);
+}
