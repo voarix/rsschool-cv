@@ -27,7 +27,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.nav{
+.nav {
   margin-bottom: 40px;
 }
 
@@ -40,7 +40,12 @@ body {
 
 .nav__link {
   text-decoration: none;
-  color: inherit;
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: var(--color-secondary);
 }
 
 .header__content {
@@ -49,13 +54,78 @@ body {
   align-items: center;
 }
 
-.header__title{
+.header__title {
+  margin-bottom: 4px;
   font-weight: 800;
   color: var(--color-primary);
 }
 
 .header__subtitle {
   color: var(--color-secondary);
+}
+
+.header__location {
+  margin-top: 20px;
+  color: var(--color-primary);
+  font-size: small;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header__location-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.header__social {
+  margin-top: 7px;
+  display: flex;
+  gap: 6px;
+  list-style: none;
+}
+
+.header__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.3s ease,
+  background-color 0.3s ease,
+  box-shadow 0.3s ease;
+}
+
+.header__social-link:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 12px rgba(51, 65, 85, 0.12);
+}
+
+.header__social-link:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: none;
+}
+
+.header__social-link-gmail {
+  border: 2px solid #EA4335;
+  color: #EA4335;
+}
+
+.header__social-link-telegram {
+  border: 2px solid #26A5E4;
+  color: #26A5E4;
+}
+
+.header__social-link-github {
+  border: 2px solid #181717;
+  color: #181717;
+}
+
+.header__social-icon {
+  width: 17px;
+  height: 17px;
 }
 
 .header__img {
