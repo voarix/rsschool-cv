@@ -213,3 +213,53 @@ body {
   border-radius: 0 10px 10px 0;
   line-height: 1.6;
 }
+
+.projects__content {
+  display: grid;
+  gap: 20px;
+}
+
+.project__card {
+  padding: 22px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.project__title {
+  margin-bottom: 8px;
+  color: var(--color-primary);
+}
+
+.project__description {
+  margin-bottom: 12px;
+  color: var(--color-secondary);
+  line-height: 1.6;
+}
+
+.project__stack {
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style: none;
+}
+
+.project__technology {
+  padding: 5px 10px;
+  color: var(--color-secondary);
+  background-color: lightgrey;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.project__link {
+  color: #7c3aed;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project__link:hover {
+  text-decoration: underline;
+}
