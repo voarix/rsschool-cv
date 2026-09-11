@@ -6,30 +6,75 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="ie=edge"
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet"
   >
   <link
     rel="stylesheet"
     href="./style.css"
   >
-  <title>CV</title>
+  <title>Alikhan Kachkynov's CV</title>
 </head>
 <body>
-<header class="container header">
-  <div class="header__info">
-    <h1 class="header__title">Alikhan Kachkynov</h1>
-    <p class="header__profession">Web Development Student</p>
-    <p class="header__location">Bishkek, Kyrgyzstan</p>
-  </div>
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a
+            href="#about"
+            class="nav__link"
+          >About
+          </a>
+        </li>
+        <li class="nav__item">
+          <a
+            href="#projects"
+            class="nav__link"
+          >Projects
+          </a>
+        </li>
+        <li class="nav__item">
+          <a
+            href="#skills"
+            class="nav__link"
+          >Skills
+          </a>
+        </li>
+        <li class="nav__item">
+          <a
+            href="#education"
+            class="nav__link"
+          >Education
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-  <div class="header__photo">
-    <img
-      class="header__img"
-      src="./assets/avatar.png"
-      alt="Alikhan Kachkynov's initials avatar"
-    >
+    <div class="header__content">
+      <div class="header__info">
+        <h1 class="header__title">Alikhan Kachkynov</h1>
+        <p class="header__subtitle">Web Development Student</p>
+      </div>
+
+      <div class="header__photo">
+        <img
+          class="header__img"
+          src="./assets/avatar.png"
+          alt="Alikhan Kachkynov's initials avatar"
+        >
+      </div>
+    </div>
   </div>
 </header>
 </body>

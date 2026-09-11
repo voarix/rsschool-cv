@@ -1,5 +1,16 @@
+:root {
+  --color-primary: #334155;
+  --color-secondary: #64748B;
+}
+
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
 }
 
 .container {
@@ -9,9 +20,42 @@
 }
 
 .header {
+  padding: 20px 0 40px;
+  background-image: url("./assets/header-1.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav{
+  margin-bottom: 40px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__title{
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.header__subtitle {
+  color: var(--color-secondary);
 }
 
 .header__img {
