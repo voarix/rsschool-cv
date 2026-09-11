@@ -1,0 +1,365 @@
+:root {
+  --color-primary: #334155;
+  --color-secondary: #64748B;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 30px 0 40px;
+  background-image: url("./assets/header-1.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav {
+  margin-bottom: 40px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: var(--color-secondary);
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  margin-bottom: 4px;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.header__subtitle {
+  color: var(--color-secondary);
+}
+
+.header__location {
+  margin-top: 25px;
+  color: var(--color-primary);
+  font-size: small;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header__location-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.header__social {
+  margin-top: 7px;
+  display: flex;
+  gap: 6px;
+  list-style: none;
+}
+
+.header__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.3s ease,
+  background-color 0.3s ease,
+  box-shadow 0.3s ease;
+}
+
+.header__social-link:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 12px rgba(51, 65, 85, 0.12);
+}
+
+.header__social-link:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: none;
+}
+
+.header__social-link-gmail {
+  border: 2px solid #EA4335;
+  color: #EA4335;
+  background-color: rgba(234, 67, 53, 0.08);
+}
+
+.header__social-link-telegram {
+  border: 2px solid #26A5E4;
+  color: #26A5E4;
+  background-color: rgba(38, 165, 228, 0.08);
+}
+
+.header__social-link-github {
+  border: 2px solid #181717;
+  color: #181717;
+  background-color: rgba(24, 23, 23, 0.06);
+}
+
+.header__social-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.header__img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cv-section {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  padding: 56px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.cv-section__title {
+  color: var(--color-primary);
+}
+
+.about__content {
+  display: grid;
+  gap: 12px;
+}
+
+.about__text {
+  color: var(--color-secondary);
+  line-height: 1.7;
+}
+
+.skills__content {
+  display: grid;
+  gap: 35px;
+}
+
+.skills__subtitle {
+  color: var(--color-primary);
+}
+
+.skills__list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.skills__item {
+  padding: 8px 14px;
+  color: var(--color-primary);
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  transition: background-color 0.3s ease,
+  transform 0.3s ease;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skills__item:hover {
+  background-color: lightgrey;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.skills__item:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.skills__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.code__block {
+  padding: 18px 20px;
+  color: var(--color-primary);
+  background-color: #f8fafc;
+  border-left: 3px solid #a78bfa;
+  border-radius: 0 10px 10px 0;
+  line-height: 1.6;
+}
+
+.projects__content {
+  display: grid;
+  gap: 20px;
+}
+
+.project__card {
+  padding: 22px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.project__title {
+  margin-bottom: 8px;
+  color: var(--color-primary);
+}
+
+.project__description {
+  margin-bottom: 12px;
+  color: var(--color-secondary);
+  line-height: 1.6;
+}
+
+.project__stack {
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style: none;
+}
+
+.project__technology {
+  padding: 5px 10px;
+  color: var(--color-secondary);
+  background-color: lightgrey;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.project__link {
+  color: #7c3aed;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project__link:hover {
+  text-decoration: underline;
+}
+
+.education {
+  border-bottom: none;
+}
+
+.education__content {
+  display: grid;
+  gap: 32px;
+}
+
+.education__places {
+  display: grid;
+  gap: 10px;
+}
+
+.education__heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.education__school,
+.languages__title {
+  color: var(--color-primary);
+}
+
+.education__time {
+  color: var(--color-secondary);
+}
+
+.languages__list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+  list-style: none;
+}
+
+.languages__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 10px;
+  color: var(--color-primary);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.languages__item span:last-child {
+  color: var(--color-secondary);
+}
+
+.footer {
+  padding: 24px 0;
+  background-color: #f8fafc;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer__github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease,
+  transform 0.3s ease;
+}
+
+.footer__github:hover {
+  color: #7c3aed;
+  transform: translateY(-2px);
+}
+
+.footer__github-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.footer__year {
+  color: var(--color-secondary);
+}
+
+.footer__school {
+  transition: transform 0.3s ease;
+}
+
+.footer__school:hover {
+  transform: translateY(-2px);
+}
+
+.footer__school-logo {
+  width: 90px;
+}
